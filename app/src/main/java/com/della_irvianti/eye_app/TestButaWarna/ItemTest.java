@@ -1,0 +1,19 @@
+package com.della_irvianti.eye_app.TestButaWarna;
+
+public class ItemTest {
+    String name;
+    int image;
+
+    public ItemTest(String name, int image){
+        this.name = name;
+        this.image = image;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getImage() {
+        return image;
+    }
+}

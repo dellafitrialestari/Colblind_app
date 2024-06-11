@@ -7,6 +7,8 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.della_irvianti.eye_app.TestButaWarna.TestActivity;
+
 public class HomeActivity extends AppCompatActivity {
 
     @Override
@@ -14,13 +16,21 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        // Cari fitur1 menggunakan id dan tambahkan klik listener
-        LinearLayout fitur1 = findViewById(R.id.fitur1);
-        fitur1.setOnClickListener(new View.OnClickListener() {
+        LinearLayout test_butawarna = findViewById(R.id.fitur1);
+        LinearLayout instruksi_test = findViewById(R.id.fitur2);
+        test_butawarna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Buat Intent untuk memulai TestActivity
                 Intent intent = new Intent(HomeActivity.this, TestActivity.class);
+                startActivity(intent);
+            }
+        });
+        instruksi_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Buat Intent untuk memulai TestActivity
+                Intent intent = new Intent(HomeActivity.this, InstruksiActivity.class);
                 startActivity(intent);
             }
         });

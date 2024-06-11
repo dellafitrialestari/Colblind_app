@@ -6,4 +6,20 @@
     </style>
 
     <style name="Theme.Eye_app" parent="Base.Theme.Eye_app" />
+    <style name="PrimaryColoredButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/white</item>
+    </style>
+
+<!--    <style name="Text">-->
+<!--        <item name="fontFamily">@font/montserrat_regular</item>-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--    </style>-->
+<!--    <style name="Text.Body">-->
+<!--        <item name="android:textSize">16sp</item>-->
+<!--    </style>-->
+    <style name="WhiteSemiBold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+<!--        <item name="fontFamily">@font/montserrat_semibold</item>-->
+    </style>
 </resources>

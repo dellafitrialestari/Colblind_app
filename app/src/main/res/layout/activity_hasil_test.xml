@@ -1,10 +1,11 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#FFFFFFFF"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".TestButaWarna.HasilTestActivity">
     <ScrollView
         android:id="@+id/rp9m92ntww8a"
         android:layout_width="match_parent"
@@ -46,7 +47,7 @@
                     />
             </LinearLayout>
             <ImageView
-                android:id="@+id/raa4sav9v1to"
+                android:id="@+id/iv_flag"
                 android:layout_width="match_parent"
                 android:layout_height="184dp"
                 android:layout_marginBottom="24dp"
@@ -55,7 +56,7 @@
                 android:scaleType="fitXY"
                 />
             <TextView
-                android:id="@+id/rc130wtrujc"
+                android:id="@+id/vbenar"
                 android:textColor="#292D32"
                 android:textSize="12sp"
                 android:layout_marginBottom="22dp"
@@ -64,10 +65,10 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:textAlignment="center"
-                android:text="Benar : 0/10"
+                android:text="Jumlah benar : 0"
                 />
             <TextView
-                android:id="@+id/r7dvyvy2ixtg"
+                android:id="@+id/hasil"
                 android:textColor="#FF0000"
                 android:textSize="16sp"
                 android:layout_marginBottom="22dp"
@@ -87,7 +88,7 @@
                 android:layout_marginHorizontal="94dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/r4oga2xszw3t"
+                    android:id="@+id/sebelumnya"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:background="@drawable/ic_prev"
@@ -99,7 +100,7 @@
                     android:layout_weight="1"
                     />
                 <LinearLayout
-                    android:id="@+id/r734yz1rauat"
+                    android:id="@+id/cobalagi"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:background="@drawable/ic_restart"
@@ -111,7 +112,7 @@
                     android:layout_weight="1"
                     />
                 <LinearLayout
-                    android:id="@+id/rgl1klgeuwvk"
+                    android:id="@+id/selanjutnya"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:background="@drawable/ic_next"
@@ -119,7 +120,7 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/rnygvhb6s9qn"
+                android:id="@+id/content_isi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_fitur"
@@ -128,7 +129,7 @@
                 android:layout_marginHorizontal="22dp"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/r6dzayiwngs7"
+                    android:id="@+id/isi"
                     android:textColor="#292D32"
                     android:textSize="12sp"
                     android:layout_marginBottom="12dp"
@@ -137,7 +138,7 @@
                     android:text="Keterangan 1"
                     />
                 <TextView
-                    android:id="@+id/r1mcseqnwzst"
+                    android:id="@+id/isi2"
                     android:textColor="#292D32"
                     android:textSize="12sp"
                     android:layout_marginBottom="12dp"
@@ -146,7 +147,7 @@
                     android:text="Keterangan 2"
                     />
                 <TextView
-                    android:id="@+id/r8e8ft2lexui"
+                    android:id="@+id/isi3"
                     android:textColor="#292D32"
                     android:textSize="12sp"
                     android:layout_height="wrap_content"

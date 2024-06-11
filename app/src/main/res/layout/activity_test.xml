@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestActivity">
+    tools:context=".TestButaWarna.TestActivity">
+
 
     <ScrollView
         android:id="@+id/roof8vnuwl1l"
@@ -30,7 +31,7 @@
                 android:layout_marginBottom="74dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/r66pgzj0txrt"
+                    android:id="@+id/exit"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:background="@drawable/ic_back"
@@ -60,7 +61,7 @@
                 android:text="Apa yang kamu lihat di plate tes?"
                 />
             <ImageView
-                android:id="@+id/rw502w6smwq"
+                android:id="@+id/iv_flag"
                 android:layout_width="match_parent"
                 android:layout_height="184dp"
                 android:layout_marginBottom="23dp"
@@ -69,7 +70,7 @@
                 android:scaleType="fitXY"
                 />
             <TextView
-                android:id="@+id/rcreeyhxloai"
+                android:id="@+id/vbenar"
                 android:textColor="#292D32"
                 android:textSize="12sp"
                 android:layout_marginBottom="22dp"
@@ -88,22 +89,38 @@
                 android:layout_marginBottom="23dp"
                 android:layout_marginHorizontal="32dp"
                 android:orientation="horizontal">
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/options1"-->
+<!--                    android:layout_width="134dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:background="@drawable/bg_fitur"-->
+<!--                    android:paddingVertical="12dp"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/b_answer1"-->
+<!--                        android:textColor="#292D32"-->
+<!--                        android:textSize="12sp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="Tidak ada angka"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
                 <LinearLayout
-                    android:id="@+id/rf4nhp8hd1tu"
-                    android:layout_width="134dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:background="@drawable/bg_fitur"
-                    android:paddingVertical="12dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/rlqrtqhbcxj"
-                        android:textColor="#292D32"
-                        android:textSize="12sp"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b_answer1"
+                        android:layout_width="134dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_fitur"
+                        android:gravity="center_horizontal|center_vertical"
                         android:text="Tidak ada angka"
-                        />
+                        android:textAllCaps="false"
+                        android:textColor="#292D32"
+                        android:textSize="12sp" />
                 </LinearLayout>
                 <View
                     android:layout_width="0dp"
@@ -111,22 +128,21 @@
                     android:layout_weight="1"
                     />
                 <LinearLayout
-                    android:id="@+id/r3t7avk70re5"
-                    android:layout_width="134dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:background="@drawable/bg_fitur"
-                    android:paddingVertical="12dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/rbgfqbkr5soo"
-                        android:textColor="#292D32"
-                        android:textSize="12sp"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b_answer2"
+                        android:layout_width="134dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_fitur"
+                        android:gravity="center_horizontal|center_vertical"
                         android:text="42"
-                        />
+                        android:textAllCaps="false"
+                        android:textColor="#292D32"
+                        android:textSize="12sp" />
                 </LinearLayout>
+
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/rdm8u8bdl0e5"
@@ -137,21 +153,19 @@
                 android:layout_marginBottom="24dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/rjqnhms5v1ms"
-                    android:layout_width="134dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:background="@drawable/bg_fitur"
-                    android:paddingVertical="12dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/r1hf068eb83a"
-                        android:textColor="#292D32"
-                        android:textSize="12sp"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b_answer3"
+                        android:layout_width="134dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_fitur"
+                        android:gravity="center_horizontal|center_vertical"
                         android:text="2"
-                        />
+                        android:textAllCaps="false"
+                        android:textColor="#292D32"
+                        android:textSize="12sp" />
                 </LinearLayout>
                 <View
                     android:layout_width="0dp"
@@ -159,21 +173,19 @@
                     android:layout_weight="1"
                     />
                 <LinearLayout
-                    android:id="@+id/r4649wg88kqn"
-                    android:layout_width="134dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:background="@drawable/bg_fitur"
-                    android:paddingVertical="13dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:id="@+id/rejgdds6qa4s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/b_answer4"
+                        android:layout_width="134dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_fitur"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="72"
+                        android:textAllCaps="false"
                         android:textColor="#292D32"
-                        android:textSize="12sp"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="74"
-                        />
+                        android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
