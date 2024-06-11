@@ -83,9 +83,9 @@
                     <LinearLayout
                         android:id="@+id/ic_fitur_1"
                         android:layout_width="match_parent"
-                        android:layout_height="24dp"
-                        android:background="@drawable/ic_fitur1"
-                        android:layout_marginBottom="26dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/ic_fitur_palming"
+                        android:layout_marginBottom="11dp"
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
@@ -112,49 +112,50 @@
                     <LinearLayout
                         android:id="@+id/ic_fitur_2"
                         android:layout_width="match_parent"
-                        android:layout_height="24dp"
-                        android:background="#FFD9D9D9"
-                        android:layout_marginBottom="25dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/ic_fitur_kedip"
+                        android:layout_marginBottom="11dp"
                         android:layout_marginHorizontal="53dp"
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
                         android:id="@+id/text_fitur_2"
                         android:textColor="#292D32"
-                        android:textSize="12sp"
+                        android:textSize="11sp"
+                        android:textAlignment="center"
                         android:layout_marginHorizontal="18dp"
                         android:layout_height="wrap_content"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_weight="1"
                         android:text="Mulai berkedip dan berdetak"
                         />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/rut1d9l5x8th"
+                android:id="@+id/latihan_fitur2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:layout_marginBottom="24dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/rfaplxhzdk7w"
+                    android:id="@+id/fitur_3"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
                     android:paddingVertical="23dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/rhw96cnqbgxp"
+                        android:id="@+id/ic_fitur_3"
                         android:layout_width="match_parent"
-                        android:layout_height="24dp"
-                        android:background="#FFD9D9D9"
-                        android:layout_marginBottom="26dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/ic_fitur_gerakmata"
+                        android:layout_marginBottom="11dp"
                         android:layout_marginHorizontal="53dp"
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/rgh34etvmfn"
+                        android:id="@+id/text_fitur_3"
                         android:textColor="#292D32"
                         android:textSize="12sp"
                         android:layout_marginStart="32dp"
@@ -169,7 +170,7 @@
                     android:layout_weight="1"
                     />
                 <LinearLayout
-                    android:id="@+id/rx81x3202qca"
+                    android:id="@+id/fitur_4"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
@@ -177,15 +178,15 @@
                     android:paddingHorizontal="50dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/r5e6xltoq5k7"
+                        android:id="@+id/ic_fitur_4"
                         android:layout_width="match_parent"
-                        android:layout_height="24dp"
-                        android:background="#FFD9D9D9"
-                        android:layout_marginBottom="26dp"
+                        android:layout_height="47dp"
+                        android:background="@drawable/ic_fitur_zigzag"
+                        android:layout_marginBottom="3dp"
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/r3kxvfwinwya"
+                        android:id="@+id/text_fitur_4"
                         android:textColor="#292D32"
                         android:textSize="12sp"
                         android:layout_height="wrap_content"
@@ -195,29 +196,29 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/rovjfcxji51a"
+                android:id="@+id/latihan_fitur3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/rc4okzsbhw05"
+                    android:id="@+id/fitur_5"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
                     android:paddingVertical="23dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/raqv6p21a3m"
+                        android:id="@+id/ic_fitur_5"
                         android:layout_width="match_parent"
-                        android:layout_height="24dp"
-                        android:background="#FFD9D9D9"
-                        android:layout_marginBottom="26dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/ic_fitur_flower"
+                        android:layout_marginBottom="11dp"
                         android:layout_marginHorizontal="53dp"
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/rhnqdjs7ifot"
+                        android:id="@+id/text_fitur_5"
                         android:textColor="#292D32"
                         android:textSize="12sp"
                         android:layout_marginStart="34dp"
@@ -232,26 +233,26 @@
                     android:layout_weight="1"
                     />
                 <LinearLayout
-                    android:id="@+id/r5dd4ny7413q"
+                    android:id="@+id/fitur_6"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
                     android:paddingVertical="23dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/rqhdjyiiit1b"
+                        android:id="@+id/ic_fitur_6"
                         android:layout_width="match_parent"
-                        android:layout_height="24dp"
-                        android:background="#FFD9D9D9"
-                        android:layout_marginBottom="26dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/ic_fitur_focus"
+                        android:layout_marginBottom="11dp"
                         android:layout_marginHorizontal="53dp"
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/rjmo3deunefi"
+                        android:id="@+id/text_fitur_6"
                         android:textColor="#292D32"
                         android:textSize="12sp"
-                        android:layout_marginStart="19dp"
+                        android:layout_marginStart="20dp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
                         android:text="Fokus dekat &amp; jauh"
