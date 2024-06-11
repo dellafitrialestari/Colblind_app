@@ -9,15 +9,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class LatihanActivity extends AppCompatActivity {
+public class GameActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_latihan);
+        setContentView(R.layout.activity_game);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setSelectedItemId(R.id.latihanFragment);
+        bottomNavigationView.setSelectedItemId(R.id.gameFragment);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -28,10 +28,10 @@ public class LatihanActivity extends AppCompatActivity {
                     overridePendingTransition(0, 0);
                     return true;
                 } else if (id == R.id.latihanFragment) {
+                    startActivity(new Intent(getApplicationContext(), LatihanActivity.class));
+                    overridePendingTransition(0, 0);
                     return true;
                 } else if (id == R.id.gameFragment) {
-                    startActivity(new Intent(getApplicationContext(), GameActivity.class));
-                    overridePendingTransition(0, 0);
                     return true;
                 }
                 return false;
