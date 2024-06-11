@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestButaWarna.HasilTestActivity">
+    tools:context=".Test.HasilTestActivity">
     <ScrollView
         android:id="@+id/rp9m92ntww8a"
         android:layout_width="match_parent"

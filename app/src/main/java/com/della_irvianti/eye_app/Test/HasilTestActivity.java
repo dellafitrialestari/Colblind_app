@@ -1,4 +1,4 @@
-package com.della_irvianti.eye_app.TestButaWarna;
+package com.della_irvianti.eye_app.Test;
 
 import android.app.Activity;
 import android.app.AlertDialog;

@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.della_irvianti.eye_app.TestButaWarna.TestActivity;
+import com.della_irvianti.eye_app.Test.TestActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
