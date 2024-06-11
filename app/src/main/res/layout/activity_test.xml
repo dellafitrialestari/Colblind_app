@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FFFFFFFF"
+    android:background="@color/white"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#FFFFFFFF"
+        android:background="@color/white"
         android:scrollbars="none"
         android:fillViewport="true">
         <LinearLayout
@@ -21,7 +21,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <LinearLayout
-                android:id="@+id/rq6ebi64vrlm"
+                android:id="@+id/test_nav"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -39,18 +39,18 @@
                     android:orientation="vertical">
                 </LinearLayout>
                 <TextView
-                    android:id="@+id/r767pyst10k5"
-                    android:textColor="#FFFFFF"
+                    android:id="@+id/test_title"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:text="Tes Buta Warna"
+                    android:text="@string/test_title"
                     />
             </LinearLayout>
             <TextView
-                android:id="@+id/rjrj9zjwyl3"
-                android:textColor="#292D32"
+                android:id="@+id/pertanyaan"
+                android:textColor="@color/black_text"
                 android:textSize="16sp"
                 android:layout_marginBottom="22dp"
                 android:layout_marginLeft="22dp"
@@ -71,7 +71,7 @@
                 />
             <TextView
                 android:id="@+id/vbenar"
-                android:textColor="#292D32"
+                android:textColor="@color/black_text"
                 android:textSize="12sp"
                 android:layout_marginBottom="22dp"
                 android:layout_marginLeft="22dp"
@@ -99,7 +99,7 @@
 <!--                    android:orientation="vertical">-->
 <!--                    <TextView-->
 <!--                        android:id="@+id/b_answer1"-->
-<!--                        android:textColor="#292D32"-->
+<!--                        android:textColor="@color/black_text"-->
 <!--                        android:textSize="12sp"-->
 <!--                        android:layout_height="match_parent"-->
 <!--                        android:layout_width="match_parent"-->
@@ -119,7 +119,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="Tidak ada angka"
                         android:textAllCaps="false"
-                        android:textColor="#292D32"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp" />
                 </LinearLayout>
                 <View
@@ -139,7 +139,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="42"
                         android:textAllCaps="false"
-                        android:textColor="#292D32"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp" />
                 </LinearLayout>
 
@@ -164,7 +164,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="2"
                         android:textAllCaps="false"
-                        android:textColor="#292D32"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp" />
                 </LinearLayout>
                 <View
@@ -184,7 +184,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:text="72"
                         android:textAllCaps="false"
-                        android:textColor="#292D32"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>

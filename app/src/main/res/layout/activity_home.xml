@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FFFFFFFF"
+    android:background="@color/white"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#FFFFFFFF"
+        android:background="@color/white"
         android:scrollbars="none"
         android:paddingHorizontal="22dp"
         android:fillViewport="true">
@@ -43,16 +43,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="14dp"
                         android:layout_weight="1"
-                        android:text="Kesehatan Mata"
-                        android:textColor="#8DA8F2"
+                        android:text="@string/home_heading1"
+                        android:textColor="@color/blue_text"
                         android:textSize="30sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Tes buta warna dengan ishihara!"
-                        android:textColor="#AEAEAE"
+                        android:text="@string/home_heading2"
+                        android:textColor="@color/grey_text"
                         android:textSize="12sp" />
                 </LinearLayout>
 
@@ -105,8 +105,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Reminder"
-                            android:textColor="#292D32"
+                            android:text="@string/reminder"
+                            android:textColor="@color/black_text"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -115,8 +115,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Simulasi tes buta warna, jika ada masalah pada penglihatan warna harap konsultasikan ke tenaga medis"
-                    android:textColor="#FFFFFF"
+                    android:text="@string/home_reminder"
+                    android:textColor="@color/white"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -124,8 +124,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="19dp"
-                android:text="Fitur Kami"
-                android:textColor="#292D32"
+                android:text="@string/home_fitur"
+                android:textColor="@color/black_text"
                 android:textSize="16sp" />
 
             <LinearLayout
@@ -158,8 +158,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="28dp"
-                        android:text="Tes Buta Warna"
-                        android:textColor="#292D32"
+                        android:text="@string/home_fitur1"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp" />
                 </LinearLayout>
 
@@ -189,8 +189,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Instruksi"
-                        android:textColor="#292D32"
+                        android:text="@string/home_fitur2"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -199,8 +199,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="19dp"
-                android:text="Jaga kesehatan mata anda!"
-                android:textColor="#292D32"
+                android:text="@string/home_kesehatan"
+                android:textColor="@color/black_text"
                 android:textSize="16sp" />
 
             <LinearLayout
@@ -234,9 +234,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="27dp"
                         android:layout_weight="1"
-                        android:text="Tips Menjaga Kesehatan Mata"
+                        android:text="@string/home_tips"
                         android:textAlignment="center"
-                        android:textColor="#292D32"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp" />
                 </LinearLayout>
                 <View
@@ -267,9 +267,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="29dp"
                         android:layout_weight="1"
-                        android:text="Makanan Sehat untuk Mata"
+                        android:text="@string/home_makanan"
                         android:textAlignment="center"
-                        android:textColor="#292D32"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>

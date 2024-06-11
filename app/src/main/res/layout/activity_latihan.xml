@@ -2,18 +2,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FFFFFFFF"
+    android:background="@color/white"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LatihanActivity"
     >
     <ScrollView
-        android:id="@+id/content_isi3"
+        android:id="@+id/content_latihan"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#FFFFFFFF"
+        android:background="@color/white"
         android:paddingTop="46dp"
         android:paddingBottom="24dp"
         android:paddingHorizontal="22dp"
@@ -23,14 +23,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <LinearLayout
-                android:id="@+id/content_heading"
+                android:id="@+id/latihan_heading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:layout_marginBottom="48dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/text_heading"
+                    android:id="@+id/latihan_text_heading"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -38,23 +38,23 @@
                     android:orientation="vertical">
                     <TextView
                         android:id="@+id/heading1"
-                        android:textColor="#8DA8F2"
+                        android:textColor="@color/blue_text"
                         android:textSize="30sp"
                         android:layout_marginBottom="14dp"
                         android:layout_marginHorizontal="2dp"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_weight="1"
-                        android:text="Latihan Mata"
+                        android:text="@string/latihan_heading1"
                         />
                     <TextView
                         android:id="@+id/heading2"
-                        android:textColor="#AEAEAE"
+                        android:textColor="@color/grey_text"
                         android:textSize="12sp"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:layout_weight="1"
-                        android:text="Tes buta warna dengan ishihara!"
+                        android:text="@string/latihan_heading2"
                         />
                 </LinearLayout>
                 <LinearLayout
@@ -66,14 +66,14 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/latihan_fitur"
+                android:id="@+id/latihan_fitur1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:layout_marginBottom="24dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/fitur_1"
+                    android:id="@+id/latihan1"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
@@ -81,7 +81,7 @@
                     android:paddingHorizontal="49dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/ic_fitur_1"
+                        android:id="@+id/ic_latihan1"
                         android:layout_width="match_parent"
                         android:layout_height="39dp"
                         android:background="@drawable/ic_fitur_palming"
@@ -89,12 +89,12 @@
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/text_fitur_1"
-                        android:textColor="#292D32"
+                        android:id="@+id/text_latihan1"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Palming"
+                        android:text="@string/latihan1"
                         />
                 </LinearLayout>
                 <View
@@ -103,14 +103,14 @@
                     android:layout_weight="1"
                     />
                 <LinearLayout
-                    android:id="@+id/fitur_2"
+                    android:id="@+id/latihan2"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
                     android:paddingVertical="16dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/ic_fitur_2"
+                        android:id="@+id/ic_latihan2"
                         android:layout_width="match_parent"
                         android:layout_height="39dp"
                         android:background="@drawable/ic_fitur_kedip"
@@ -119,15 +119,15 @@
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/text_fitur_2"
-                        android:textColor="#292D32"
+                        android:id="@+id/text_latihan2"
+                        android:textColor="@color/black_text"
                         android:textSize="11sp"
                         android:textAlignment="center"
                         android:layout_marginHorizontal="18dp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
                         android:layout_weight="1"
-                        android:text="Mulai berkedip dan berdetak"
+                        android:text="@string/latihan2"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -139,14 +139,14 @@
                 android:layout_marginBottom="24dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/fitur_3"
+                    android:id="@+id/latihan3"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
                     android:paddingVertical="23dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/ic_fitur_3"
+                        android:id="@+id/ic_latihan3"
                         android:layout_width="match_parent"
                         android:layout_height="39dp"
                         android:background="@drawable/ic_fitur_gerakmata"
@@ -155,13 +155,13 @@
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/text_fitur_3"
-                        android:textColor="#292D32"
+                        android:id="@+id/text_latihan3"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp"
                         android:layout_marginStart="32dp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Gerakan mata"
+                        android:text="@string/latihan3"
                         />
                 </LinearLayout>
                 <View
@@ -170,7 +170,7 @@
                     android:layout_weight="1"
                     />
                 <LinearLayout
-                    android:id="@+id/fitur_4"
+                    android:id="@+id/latihan4"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
@@ -178,7 +178,7 @@
                     android:paddingHorizontal="50dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/ic_fitur_4"
+                        android:id="@+id/ic_latihan4"
                         android:layout_width="match_parent"
                         android:layout_height="47dp"
                         android:background="@drawable/ic_fitur_zigzag"
@@ -186,12 +186,12 @@
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/text_fitur_4"
-                        android:textColor="#292D32"
+                        android:id="@+id/text_latihan4"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Zig-zag"
+                        android:text="@string/latihan4"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -202,14 +202,14 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/fitur_5"
+                    android:id="@+id/latihan5"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
                     android:paddingVertical="23dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/ic_fitur_5"
+                        android:id="@+id/ic_latihan5"
                         android:layout_width="match_parent"
                         android:layout_height="39dp"
                         android:background="@drawable/ic_fitur_flower"
@@ -218,13 +218,13 @@
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/text_fitur_5"
-                        android:textColor="#292D32"
+                        android:id="@+id/text_latihan5"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp"
                         android:layout_marginStart="34dp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Flower effect"
+                        android:text="@string/latihan5"
                         />
                 </LinearLayout>
                 <View
@@ -233,14 +233,14 @@
                     android:layout_weight="1"
                     />
                 <LinearLayout
-                    android:id="@+id/fitur_6"
+                    android:id="@+id/latihan6"
                     android:layout_width="144dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_fitur"
                     android:paddingVertical="23dp"
                     android:orientation="vertical">
                     <LinearLayout
-                        android:id="@+id/ic_fitur_6"
+                        android:id="@+id/ic_latihan6"
                         android:layout_width="match_parent"
                         android:layout_height="39dp"
                         android:background="@drawable/ic_fitur_focus"
@@ -249,13 +249,13 @@
                         android:orientation="vertical">
                     </LinearLayout>
                     <TextView
-                        android:id="@+id/text_fitur_6"
-                        android:textColor="#292D32"
+                        android:id="@+id/text_latihan6"
+                        android:textColor="@color/black_text"
                         android:textSize="12sp"
                         android:layout_marginStart="20dp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Fokus dekat &amp; jauh"
+                        android:text="@string/latihan6"
                         />
                 </LinearLayout>
             </LinearLayout>

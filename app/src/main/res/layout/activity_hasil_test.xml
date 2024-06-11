@@ -1,17 +1,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FFFFFFFF"
+    android:background="@color/white"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Test.HasilTestActivity">
     <ScrollView
-        android:id="@+id/rp9m92ntww8a"
+        android:id="@+id/content_hasiltest"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#FFFFFFFF"
+        android:background="@color/white"
         android:scrollbars="none"
         android:fillViewport="true">
         <LinearLayout
@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <LinearLayout
-                android:id="@+id/r93zv6g46xwp"
+                android:id="@+id/test_nav"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -29,7 +29,7 @@
                 android:layout_marginBottom="70dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:id="@+id/rb50uqgeermr"
+                    android:id="@+id/ic_test"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:background="@drawable/ic_back"
@@ -37,13 +37,13 @@
                     android:orientation="vertical">
                 </LinearLayout>
                 <TextView
-                    android:id="@+id/rbe9odizba97"
-                    android:textColor="#FFFFFF"
+                    android:id="@+id/test_title"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:text="Tes Buta Warna"
+                    android:text="@string/test_title"
                     />
             </LinearLayout>
             <ImageView
@@ -57,7 +57,7 @@
                 />
             <TextView
                 android:id="@+id/vbenar"
-                android:textColor="#292D32"
+                android:textColor="@color/black_text"
                 android:textSize="12sp"
                 android:layout_marginBottom="22dp"
                 android:layout_marginLeft="22dp"
@@ -65,11 +65,11 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:textAlignment="center"
-                android:text="Jumlah benar : 0"
+                android:text="@string/test_vbenar"
                 />
             <TextView
                 android:id="@+id/hasil"
-                android:textColor="#FF0000"
+                android:textColor="@color/red"
                 android:textSize="16sp"
                 android:layout_marginBottom="22dp"
                 android:layout_marginLeft="22dp"
@@ -130,29 +130,29 @@
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/isi"
-                    android:textColor="#292D32"
+                    android:textColor="@color/black_text"
                     android:textSize="12sp"
                     android:layout_marginBottom="12dp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Keterangan 1"
+                    android:text="@string/test_ket1"
                     />
                 <TextView
                     android:id="@+id/isi2"
-                    android:textColor="#292D32"
+                    android:textColor="@color/black_text"
                     android:textSize="12sp"
                     android:layout_marginBottom="12dp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Keterangan 2"
+                    android:text="@string/test_ket2"
                     />
                 <TextView
                     android:id="@+id/isi3"
-                    android:textColor="#292D32"
+                    android:textColor="@color/black_text"
                     android:textSize="12sp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Keterangan 3"
+                    android:text="@string/test_ket3"
                     />
             </LinearLayout>
         </LinearLayout>

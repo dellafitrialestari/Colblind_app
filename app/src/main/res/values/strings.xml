@@ -2,4 +2,46 @@
     <string name="app_name">eye_app</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home_heading1">Kesehatan Mata</string>
+    <string name="home_heading2">Tes buta warna dengan ishihara!</string>
+    <string name="reminder">Reminder</string>
+    <string name="home_reminder">Simulasi tes buta warna, jika ada masalah pada penglihatan warna harap konsultasikan ke tenaga medis</string>
+    <string name="home_fitur">Fitur Kami</string>
+    <string name="home_fitur1">Tes Buta Warna</string>
+    <string name="home_fitur2">Instruksi</string>
+    <string name="home_kesehatan">Jaga kesehatan mata anda!</string>
+    <string name="home_tips">Tips Menjaga Kesehatan Mata</string>
+    <string name="home_makanan">Makanan Sehat untuk Mata</string>
+
+    <string name="game_title">Color\nBlinder</string>
+    <string name="game_mulai">Mulai</string>
+    <string name="game_setting">Pengaturan</string>
+    <string name="game_easy">Easy</string>
+    <string name="game_hard">Hard</string>
+
+    <string name="test_title">Tes Buta Warna</string>
+    <string name="test_vbenar">Jumlah benar : 0</string>
+    <string name="test_ket1">Keterangan 1</string>
+    <string name="test_ket2">Keterangan 2</string>
+    <string name="test_ket3">Keterangan 3</string>
+
+    <string name="latihan_heading1">Latihan Mata</string>
+    <string name="latihan_heading2">Tes buta warna dengan ishihara!</string>
+    <string name="latihan1">Palming</string>
+    <string name="latihan2">Mulai berkedip dan berdetak</string>
+    <string name="latihan3">Gerakan mata</string>
+    <string name="latihan4">Zig-zag</string>
+    <string name="latihan5">Flower effect</string>
+    <string name="latihan6">Fokus dekat &amp; jauh</string>
+
+    <string name="latihan1_title">Palming Exercise</string>
+    <string name="instruksi_title">Instruksi</string>
+    <string name="instruksi1">Tutupi mata dengan telapak tangan</string>
+    <string name="instruksi2">Jangan memberi tekanan pada mata</string>
+    <string name="instruksi3">Ulangi latihan ini tiga kali sehari saat bekerja dengan perangkat digital.</string>
+    <string name="manfaat_title">Manfaat</string>
+    <string name="manfaat1"> Merilekskan mata</string>
+    <string name="manfaat2">Menenangkan pikiran</string>
+    <string name="manfaat3">Menigkatkan penglihatan</string>
 </resources>
