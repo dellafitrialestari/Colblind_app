@@ -1,149 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/soft_black"
     tools:context=".GameActivity">
-    <ScrollView
-        android:id="@+id/content_game"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@color/blue"
-        android:paddingTop="72dp"
-        android:paddingBottom="24dp"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:fillViewport="true">
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clipChildren="false"
-            android:clipToPadding="false"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:soundEffectsEnabled="false"
+            app:srcCompat="@drawable/pause" />
+
+        <TextView
+            android:id="@+id/scoretext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/Score"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/main_text"
+            android:textSize="56sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/highscoretext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/HighScore"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/main_text"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/highscore_val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/HighScore_val"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/main_text"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:maxWidth="250dp"
+            android:maxHeight="10dp"
+            android:minWidth="235dp"
+            android:minHeight="10dp"
+            android:progressDrawable="@drawable/custom_progress_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
             android:orientation="vertical">
-            <ImageView
-                android:id="@+id/ic_game"
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/game_title"
-                android:layout_marginBottom="19dp"
-                android:layout_marginHorizontal="99dp"
-                android:orientation="vertical">
-            </ImageView>
-            <TextView
-                android:id="@+id/game_title"
-                android:textColor="@color/white"
-                android:textSize="53.752288818359375sp"
-                android:layout_marginBottom="59dp"
-                android:layout_marginHorizontal="80dp"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:textAlignment="center"
-                android:text="@string/game_title"
-                />
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/playbtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/game_mulai"
-                android:layout_marginVertical="8dp"
-                android:textColor="@color/light_blue"
-                android:textSize="34sp"
-                android:textAllCaps="false"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:padding="20dp"
-                android:background="@drawable/bg_text" />
+                android:orientation="horizontal">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/setting"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/game_setting"
-                android:layout_marginVertical="8dp"
-                android:textColor="@color/light_blue"
-                android:textSize="34sp"
-                android:textAllCaps="false"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:padding="20dp"
-                android:background="@drawable/bg_text" />
-
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/diff_tab"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="8dp"
-                android:backgroundTint="@android:color/transparent"
-                android:soundEffectsEnabled="false"
-                app:tabBackground="@drawable/track_selector"
-                app:tabGravity="fill"
-                app:tabIndicatorColor="@android:color/transparent"
-                app:tabIndicatorHeight="0dp"
-                app:tabMode="fixed"
-                app:tabRippleColor="@android:color/transparent"
-                app:tabSelectedTextColor="@color/light_blue"
-                android:gravity="center_horizontal"
-                app:tabTextAppearance="@style/CustomTabTextAppearance"
-                app:tabTextColor="@android:color/white">
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/easy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/btn1"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="fill_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
-                    android:text="@string/game_easy"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    app:cornerRadius="28dp" />
 
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/hard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/btn2"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
-                    android:text="@string/game_hard" />
-            </com.google.android.material.tabs.TabLayout>
+                    app:cornerRadius="28dp" />
 
-            <RelativeLayout
-                android:id="@+id/renk1vqj16x"
-                android:layout_width="314dp"
+                <Button
+                    android:id="@+id/btn3"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="98dp"
-                android:clipChildren="false"
-                android:clipToPadding="false">
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:clipChildren="false"
-                    android:clipToPadding="false"
-                    android:gravity="end"
-                    android:orientation="vertical">
-                    <ImageView
-                        android:id="@+id/rv063s6nh4ep"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/ic_bottom"
-                        android:orientation="vertical">
-                    </ImageView>
-                </LinearLayout>
-            </RelativeLayout>
+                <Button
+                    android:id="@+id/btn5"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn7"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn9"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn10"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn11"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn12"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn13"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn14"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn15"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+
+                <Button
+                    android:id="@+id/btn16"
+                    style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/black"
+                    android:gravity="clip_horizontal|center_vertical"
+                    android:soundEffectsEnabled="false"
+                    app:cornerRadius="28dp" />
+            </LinearLayout>
+
         </LinearLayout>
-    </ScrollView>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@android:color/white"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_nav_menu"
-        app:itemActiveIndicatorStyle="@color/transparent"
-        app:itemTextColor="@color/bottom_nav_color"
-        app:itemIconTint="@color/bottom_nav_color"/>
+
+
+    </LinearLayout>
+
 </LinearLayout>

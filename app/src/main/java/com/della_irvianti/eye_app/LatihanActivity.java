@@ -30,7 +30,7 @@ public class LatihanActivity extends AppCompatActivity {
                 } else if (id == R.id.latihanFragment) {
                     return true;
                 } else if (id == R.id.gameFragment) {
-                    startActivity(new Intent(getApplicationContext(), GameActivity.class));
+                    startActivity(new Intent(getApplicationContext(), MenuGameActivity.class));
                     overridePendingTransition(0, 0);
                     return true;
                 }
