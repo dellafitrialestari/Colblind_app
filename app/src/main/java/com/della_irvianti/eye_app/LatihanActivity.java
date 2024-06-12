@@ -3,8 +3,12 @@ package com.della_irvianti.eye_app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class LatihanActivity extends AppCompatActivity {
@@ -35,6 +39,18 @@ public class LatihanActivity extends AppCompatActivity {
                     return true;
                 }
                 return false;
+            }
+        });
+
+        // Mengatur onClickListeners untuk LinearLayouts
+        LinearLayout palming = findViewById(R.id.latihan1);
+
+        palming.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Buat Intent untuk memulai TestActivity
+                Intent intent = new Intent(LatihanActivity.this, DetailLatihanActivity.class);
+                startActivity(intent);
             }
         });
     }

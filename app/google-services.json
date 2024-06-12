@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1097034985074",
+    "project_id": "colblind-10c77",
+    "storage_bucket": "colblind-10c77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097034985074:android:99ad7721eccf7140ee5ceb",
+        "android_client_info": {
+          "package_name": "com.della_irvianti.eye_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ36hELUnTGPSaSKWS1NjW9aVFpvFlCeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

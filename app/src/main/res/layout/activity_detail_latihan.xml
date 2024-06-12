@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:background="@drawable/bg_card"
+                android:background="@drawable/bg_top"
                 android:paddingVertical="53dp"
                 android:paddingHorizontal="24dp"
                 android:orientation="horizontal">
@@ -46,102 +46,100 @@
                     android:text="@string/latihan1_title"
                     />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/latihan1_body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:paddingVertical="28dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingVertical="28dp">
+
                 <TextView
                     android:id="@+id/instruksi_title"
-                    android:textColor="@color/blue_text"
-                    android:textSize="16sp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginStart="23dp"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginBottom="15dp"
                     android:text="@string/instruksi_title"
-                    />
+                    android:textColor="@color/blue_text"
+                    android:textSize="16sp" />
+
                 <TextView
                     android:id="@+id/latihan1_instruksi1"
-                    android:textColor="@color/black_text"
-                    android:textSize="12sp"
-                    android:layout_marginBottom="18dp"
-                    android:layout_marginStart="26dp"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginBottom="18dp"
                     android:text="@string/instruksi1"
-                    />
-                <TextView
-                    android:id="@+id/latihan1_instruksi2"
                     android:textColor="@color/black_text"
-                    android:textSize="12sp"
-                    android:layout_marginBottom="18dp"
-                    android:layout_marginStart="26dp"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/instruksi2"
-                    />
-                <TextView
-                    android:id="@+id/instruksi3"
-                    android:textColor="@color/black_text"
-                    android:textSize="12sp"
-                    android:layout_marginBottom="36dp"
-                    android:layout_marginHorizontal="25dp"
-                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/instruksi_container"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginBottom="36dp"
                     android:layout_weight="1"
                     android:text="@string/instruksi3"
-                    />
-                <LinearLayout
+                    android:textColor="@color/black_text"
+                    android:textSize="12sp"
+                    android:orientation="horizontal" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/instruksi3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="25dp"-->
+<!--                    android:layout_marginBottom="36dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="@string/instruksi3"-->
+<!--                    android:textColor="@color/black_text"-->
+<!--                    android:textSize="12sp" />-->
+
+                <ImageView
                     android:id="@+id/latihan1_gambar"
                     android:layout_width="match_parent"
                     android:layout_height="115dp"
-                    android:background="@color/black"
-                    android:layout_marginBottom="32dp"
                     android:layout_marginHorizontal="42dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@color/black"
                     android:orientation="vertical">
-                </LinearLayout>
+                </ImageView>
+
                 <TextView
                     android:id="@+id/manfaat_title"
-                    android:textColor="@color/blue_text"
-                    android:textSize="16sp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginStart="23dp"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginBottom="15dp"
                     android:text="@string/manfaat_title"
-                    />
+                    android:textColor="@color/blue_text"
+                    android:textSize="16sp" />
+
                 <TextView
                     android:id="@+id/manfaat1"
-                    android:textColor="@color/black_text"
-                    android:textSize="12sp"
-                    android:layout_marginBottom="18dp"
-                    android:layout_marginStart="26dp"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginBottom="18dp"
                     android:text="@string/manfaat1"
-                    />
-                <TextView
-                    android:id="@+id/manfaat2"
+                    android:textColor="@color/black_text"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/manfaat_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginBottom="36dp"
+                    android:layout_weight="1"
+                    android:text="@string/instruksi3"
                     android:textColor="@color/black_text"
                     android:textSize="12sp"
-                    android:layout_marginBottom="18dp"
-                    android:layout_marginStart="26dp"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/manfaat2"
-                    />
-                <TextView
-                    android:id="@+id/manfaat3"
-                    android:textColor="@color/black_text"
-                    android:textSize="12sp"
-                    android:layout_marginStart="25dp"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="@string/manfaat3"
-                    />
+                    android:orientation="horizontal" />
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
