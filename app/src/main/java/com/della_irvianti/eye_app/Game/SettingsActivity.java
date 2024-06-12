@@ -1,4 +1,4 @@
-package com.della_irvianti.eye_app;
+package com.della_irvianti.eye_app.Game;
 
 
 import android.content.Context;
@@ -16,6 +16,8 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.della_irvianti.eye_app.MenuGameActivity;
+import com.della_irvianti.eye_app.R;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
 public class SettingsActivity extends AppCompatActivity {

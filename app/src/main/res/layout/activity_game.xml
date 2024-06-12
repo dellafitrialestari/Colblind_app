@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/soft_black"
-    tools:context=".GameActivity">
+    android:background="@color/blue"
+    tools:context=".Game.GameActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:text="@string/Score"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="@color/main_text"
             android:textSize="56sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -69,7 +68,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
         </LinearLayout>
 
         <ProgressBar

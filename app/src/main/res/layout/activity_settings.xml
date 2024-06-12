@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    tools:context=".SettingsActivity">
+    android:background="@color/blue"
+    tools:context=".Game.SettingsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,6 @@
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="Setting"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="#FFFFFF"
             android:textSize="60sp"
             app:layout_constraintBottom_toBottomOf="parent"

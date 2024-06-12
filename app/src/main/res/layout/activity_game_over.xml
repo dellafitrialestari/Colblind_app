@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    tools:context=".GameOver">
+    android:background="@color/blue"
+    tools:context=".Game.GameOver">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,35 +56,37 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/tryagain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/bg_text"
             android:maxWidth="200dp"
             android:maxHeight="65dp"
             android:minWidth="200dp"
             android:minHeight="65dp"
             android:soundEffectsEnabled="false"
+            android:textAllCaps="false"
             android:text="Try Again"
-            android:textColor="@color/black"
+            android:textColor="@color/light_blue"
             android:textSize="25sp"
             app:cornerRadius="10dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/mainmenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/bg_text"
             android:maxWidth="200dp"
             android:maxHeight="65dp"
             android:minWidth="200dp"
             android:minHeight="65dp"
             android:soundEffectsEnabled="false"
             android:text="Main Menu"
-            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textColor="@color/light_blue"
             android:textSize="25sp"
             app:cornerRadius="10dp" />
 

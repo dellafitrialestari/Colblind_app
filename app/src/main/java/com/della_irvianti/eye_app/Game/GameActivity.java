@@ -1,4 +1,4 @@
-package com.della_irvianti.eye_app;
+package com.della_irvianti.eye_app.Game;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -22,6 +22,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.della_irvianti.eye_app.MenuGameActivity;
+import com.della_irvianti.eye_app.R;
 
 import java.util.Random;
 

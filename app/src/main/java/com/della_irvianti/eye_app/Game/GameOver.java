@@ -1,4 +1,4 @@
-package com.della_irvianti.eye_app;
+package com.della_irvianti.eye_app.Game;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +14,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.della_irvianti.eye_app.MenuGameActivity;
+import com.della_irvianti.eye_app.R;
 
 public class GameOver extends AppCompatActivity {
     public static final String PREFS_DATA_Settings = "Settings_PREFS";

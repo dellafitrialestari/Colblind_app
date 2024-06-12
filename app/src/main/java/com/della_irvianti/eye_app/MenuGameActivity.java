@@ -12,6 +12,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.della_irvianti.eye_app.Game.GameActivity;
+import com.della_irvianti.eye_app.Game.SettingsActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
