@@ -32,10 +32,6 @@ public class MenuGameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_game);
 
-        // Menghilangkan ActionBar dan membuat tampilan fullscreen
-//        getSupportActionBar().hide();
-//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         // Mengambil SharedPreferences untuk pengaturan
         SharedPreferences shared_pref = getSharedPreferences(PREFS_DATA_Difficulty, MODE_PRIVATE);
         diff_status = shared_pref.getString("level_difficulty", "0");
@@ -134,11 +130,13 @@ public class MenuGameActivity extends AppCompatActivity {
             int id = item.getItemId();
             if (id == R.id.homeFragment) {
                 startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                overridePendingTransition(0, 0);
+//                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 return true;
             } else if (id == R.id.latihanFragment) {
                 startActivity(new Intent(getApplicationContext(), LatihanActivity.class));
-                overridePendingTransition(0, 0);
+//                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 return true;
             } else if (id == R.id.gameFragment) {
                 return true;
@@ -165,5 +163,13 @@ public class MenuGameActivity extends AppCompatActivity {
             mediaPlayer.release();
             mediaPlayer = null;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Mengakhiri aplikasi ketika tombol back ditekan
+        super.onBackPressed();
+        finishAffinity();
+        overridePendingTransition(0, 0);
     }
 }

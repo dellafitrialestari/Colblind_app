@@ -5,10 +5,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.della_irvianti.eye_app.Test.TestActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -31,11 +29,13 @@ public class HomeActivity extends AppCompatActivity {
                     return true;
                 } else if (id == R.id.latihanFragment) {
                     startActivity(new Intent(getApplicationContext(), LatihanActivity.class));
-                    overridePendingTransition(0, 0);
+//                    overridePendingTransition(0, 0);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     return true;
                 } else if (id == R.id.gameFragment) {
                     startActivity(new Intent(getApplicationContext(), MenuGameActivity.class));
-                    overridePendingTransition(0, 0);
+//                    overridePendingTransition(0, 0);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     return true;
                 }
                 return false;
@@ -63,5 +63,13 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Mengakhiri aplikasi ketika tombol back ditekan
+        super.onBackPressed();
+        finishAffinity();
+        overridePendingTransition(0, 0);
     }
 }

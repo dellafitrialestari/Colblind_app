@@ -3,10 +3,8 @@ package com.della_irvianti.eye_app;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class LatihanActivity extends AppCompatActivity {
@@ -25,17 +23,27 @@ public class LatihanActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 if (id == R.id.homeFragment) {
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                    overridePendingTransition(0, 0);
+//                    overridePendingTransition(0, 0);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     return true;
                 } else if (id == R.id.latihanFragment) {
                     return true;
                 } else if (id == R.id.gameFragment) {
                     startActivity(new Intent(getApplicationContext(), MenuGameActivity.class));
-                    overridePendingTransition(0, 0);
+//                    overridePendingTransition(0, 0);
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     return true;
                 }
                 return false;
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Mengakhiri aplikasi ketika tombol back ditekan
+        super.onBackPressed();
+        finishAffinity();
+        overridePendingTransition(0, 0);
     }
 }
