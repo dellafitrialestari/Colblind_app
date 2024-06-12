@@ -45,12 +45,14 @@ public class HomeActivity extends AppCompatActivity {
         // Mengatur onClickListeners untuk LinearLayouts
         LinearLayout test_butawarna = findViewById(R.id.fitur1);
         LinearLayout instruksi_test = findViewById(R.id.fitur2);
+        LinearLayout tips = findViewById(R.id.tips);
+        LinearLayout food = findViewById(R.id.makanan_sehat);
 
         test_butawarna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Buat Intent untuk memulai TestActivity
                 Intent intent = new Intent(HomeActivity.this, TestActivity.class);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 startActivity(intent);
             }
         });
@@ -58,8 +60,26 @@ public class HomeActivity extends AppCompatActivity {
         instruksi_test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Buat Intent untuk memulai InstruksiActivity
                 Intent intent = new Intent(HomeActivity.this, InstruksiActivity.class);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                startActivity(intent);
+            }
+        });
+
+        tips.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, TipsMataActivity.class);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                startActivity(intent);
+            }
+        });
+
+        food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, FoodActivity.class);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 startActivity(intent);
             }
         });

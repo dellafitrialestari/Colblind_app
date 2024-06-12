@@ -18,9 +18,15 @@
         android:theme="@style/Theme.Eye_app"
         tools:targetApi="31">
         <activity
+            android:name=".TipsMataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
             android:name=".Game.SettingsActivity"
-            android:screenOrientation="portrait"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
