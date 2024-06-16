@@ -269,6 +269,8 @@ public class GameActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Intent back = new Intent(GameActivity.this, MenuGameActivity.class);
+        startActivity(back);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
 

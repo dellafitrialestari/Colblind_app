@@ -1,50 +1,51 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".Test.TestActivity">
+
     <ScrollView
         android:id="@+id/content_latihan1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:background="@color/white"
-        android:paddingBottom="100dp"
-        android:scrollbars="none"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:scrollbars="none">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <LinearLayout
                 android:id="@+id/latihan1_nav"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:background="@drawable/bg_top"
-                android:paddingVertical="53dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:paddingHorizontal="24dp"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:id="@+id/ic_back"
+                android:paddingVertical="53dp">
+
+                <ImageView
+                    android:id="@+id/back_button"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:background="@drawable/ic_back"
+                    android:contentDescription="@string/cd_back_button"
                     android:layout_marginEnd="13dp"
-                    android:orientation="vertical">
-                </LinearLayout>
+                    android:background="@drawable/ic_back" />
+
                 <TextView
-                    android:id="@+id/latihan1_title"
+                    android:id="@+id/latihan_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:textColor="@color/white"
                     android:textSize="24sp"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/latihan1_title"
-                    />
+                    android:fontFamily="@font/plusjakartasans_semibold"
+                    tools:text="@string/latihan1_title" />
             </LinearLayout>
 
             <LinearLayout
@@ -62,51 +63,29 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginBottom="15dp"
                     android:text="@string/instruksi_title"
+                    android:fontFamily="@font/plusjakartasans_semibold"
                     android:textColor="@color/blue_text"
                     android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/latihan1_instruksi1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="26dp"
-                    android:layout_marginBottom="18dp"
-                    android:text="@string/instruksi1"
-                    android:textColor="@color/black_text"
-                    android:textSize="12sp" />
 
                 <LinearLayout
                     android:id="@+id/instruksi_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:layout_marginHorizontal="25dp"
                     android:layout_marginBottom="36dp"
-                    android:layout_weight="1"
                     android:text="@string/instruksi3"
                     android:textColor="@color/black_text"
-                    android:textSize="12sp"
-                    android:orientation="horizontal" />
-
-<!--                <TextView-->
-<!--                    android:id="@+id/instruksi3"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginHorizontal="25dp"-->
-<!--                    android:layout_marginBottom="36dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="@string/instruksi3"-->
-<!--                    android:textColor="@color/black_text"-->
-<!--                    android:textSize="12sp" />-->
+                    android:textSize="12sp" />
 
                 <ImageView
-                    android:id="@+id/latihan1_gambar"
+                    android:id="@+id/latihan_gambar"
                     android:layout_width="match_parent"
                     android:layout_height="115dp"
+                    android:contentDescription="@string/cd_gambar_latihan"
                     android:layout_marginHorizontal="42dp"
                     android:layout_marginBottom="32dp"
-                    android:background="@color/black"
-                    android:orientation="vertical">
-                </ImageView>
+                    android:background="@color/black" />
 
                 <TextView
                     android:id="@+id/manfaat_title"
@@ -115,32 +94,28 @@
                     android:layout_marginStart="23dp"
                     android:layout_marginBottom="15dp"
                     android:text="@string/manfaat_title"
+                    android:fontFamily="@font/plusjakartasans_semibold"
                     android:textColor="@color/blue_text"
                     android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/manfaat1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="26dp"
-                    android:layout_marginBottom="18dp"
-                    android:text="@string/manfaat1"
-                    android:textColor="@color/black_text"
-                    android:textSize="12sp" />
 
                 <LinearLayout
                     android:id="@+id/manfaat_container"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:layout_marginHorizontal="25dp"
                     android:layout_marginBottom="36dp"
-                    android:layout_weight="1"
                     android:text="@string/instruksi3"
                     android:textColor="@color/black_text"
-                    android:textSize="12sp"
-                    android:orientation="horizontal" />
-
+                    android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+</RelativeLayout>

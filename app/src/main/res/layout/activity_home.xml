@@ -44,6 +44,7 @@
                         android:layout_marginBottom="14dp"
                         android:layout_weight="1"
                         android:text="@string/home_heading1"
+                        android:fontFamily="@font/plusjakartasans_bold"
                         android:textColor="@color/blue_text"
                         android:textSize="30sp" />
 
@@ -52,6 +53,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/home_heading2"
+                        android:fontFamily="@font/plusjakartasans_regular"
                         android:textColor="@color/grey_text"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -106,6 +108,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/reminder"
+                            android:fontFamily="@font/plusjakartasans_medium"
                             android:textColor="@color/black_text"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -116,6 +119,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/home_reminder"
+                    android:fontFamily="@font/plusjakartasans_medium"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -125,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="19dp"
                 android:text="@string/home_fitur"
+                android:fontFamily="@font/plusjakartasans_semibold"
                 android:textColor="@color/black_text"
                 android:textSize="16sp" />
 
@@ -146,8 +151,8 @@
                     android:paddingVertical="23dp">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="53dp"
                         android:layout_marginBottom="26dp"
                         android:background="@drawable/ic_fitur1"
@@ -159,6 +164,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="28dp"
                         android:text="@string/home_fitur1"
+                        android:fontFamily="@font/plusjakartasans_medium"
                         android:textColor="@color/black_text"
                         android:textSize="12sp" />
                 </LinearLayout>
@@ -200,6 +206,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="19dp"
                 android:text="@string/home_kesehatan"
+                android:fontFamily="@font/plusjakartasans_semibold"
                 android:textColor="@color/black_text"
                 android:textSize="16sp" />
 
@@ -235,6 +242,7 @@
                         android:layout_marginHorizontal="27dp"
                         android:layout_weight="1"
                         android:text="@string/home_tips"
+                        android:fontFamily="@font/plusjakartasans_medium"
                         android:textAlignment="center"
                         android:textColor="@color/black_text"
                         android:textSize="12sp" />
@@ -268,6 +276,7 @@
                         android:layout_marginHorizontal="29dp"
                         android:layout_weight="1"
                         android:text="@string/home_makanan"
+                        android:fontFamily="@font/plusjakartasans_medium"
                         android:textAlignment="center"
                         android:textColor="@color/black_text"
                         android:textSize="12sp" />
@@ -280,11 +289,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:background="@android:color/white"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu"
-        app:itemActiveIndicatorStyle="@color/transparent"
         app:itemTextColor="@color/bottom_nav_color"
-        app:itemIconTint="@color/bottom_nav_color"/>
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextAppearanceActive="@style/BottomNavigationViewActiveTextAppearance"
+        app:itemTextAppearanceInactive="@style/BottomNavigationViewInactiveTextAppearance"
+        app:itemActiveIndicatorStyle="@color/transparent"/>
 </LinearLayout>

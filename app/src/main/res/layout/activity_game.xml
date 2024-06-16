@@ -21,7 +21,8 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:soundEffectsEnabled="false"
-            app:srcCompat="@drawable/pause" />
+            app:srcCompat="@drawable/pause"
+            android:contentDescription="@string/pause" />
 
         <TextView
             android:id="@+id/scoretext"
@@ -29,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:text="@string/Score"
+            android:fontFamily="@font/plusjakartasans_bold"
             android:textColor="@color/main_text"
             android:textSize="56sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -47,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/HighScore"
+                android:fontFamily="@font/plusjakartasans_medium"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/main_text"
                 android:textSize="16sp"
@@ -61,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/HighScore_val"
+                android:fontFamily="@font/plusjakartasans_medium"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/main_text"
                 android:textSize="16sp"
@@ -103,6 +107,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="fill_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button1"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -115,6 +120,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button2"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -127,6 +133,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button3"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -139,6 +146,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button4"
                     app:cornerRadius="28dp" />
 
             </LinearLayout>
@@ -158,6 +166,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button5"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -170,6 +179,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button6"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -182,6 +192,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button7"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -194,6 +205,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button8"
                     app:cornerRadius="28dp" />
             </LinearLayout>
 
@@ -212,6 +224,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button9"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -224,6 +237,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button10"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -236,6 +250,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button11"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -248,6 +263,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button12"
                     app:cornerRadius="28dp" />
 
             </LinearLayout>
@@ -267,6 +283,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button13"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -279,6 +296,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button14"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -291,6 +309,7 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button15"
                     app:cornerRadius="28dp" />
 
                 <Button
@@ -303,12 +322,10 @@
                     android:backgroundTint="@color/black"
                     android:gravity="clip_horizontal|center_vertical"
                     android:soundEffectsEnabled="false"
+                    android:contentDescription="@string/button16"
                     app:cornerRadius="28dp" />
             </LinearLayout>
 
         </LinearLayout>
-
-
     </LinearLayout>
-
 </LinearLayout>

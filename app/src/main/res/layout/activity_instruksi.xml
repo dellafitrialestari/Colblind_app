@@ -44,6 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:text="Instruksi"
+                    android:fontFamily="@font/plusjakartasans_semibold"
                     />
             </LinearLayout>
             <LinearLayout
@@ -61,6 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="Instruksi"
+                    android:fontFamily="@font/plusjakartasans_semibold"
                     />
                 <TextView
                     android:id="@+id/text1"
@@ -70,6 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="Tutupi mata dengan telapak tangan"
+                    android:fontFamily="@font/plusjakartasans_regular"
                     />
                 <TextView
                     android:id="@+id/text2"
@@ -79,6 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="Jangan memberi tekanan pada mata"
+                    android:fontFamily="@font/plusjakartasans_regular"
                     />
                 <TextView
                     android:id="@+id/text3"
@@ -88,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:text="Ulangi latihan ini tiga kali sehari saat bekerja dengan perangkat digital."
-                    />
+                    android:fontFamily="@font/plusjakartasans_regular"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

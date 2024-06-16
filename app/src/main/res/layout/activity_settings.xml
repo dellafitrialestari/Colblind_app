@@ -30,6 +30,7 @@
             android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="Setting"
+            android:fontFamily="@font/plusjakartasans_extrabold"
             android:textColor="#FFFFFF"
             android:textSize="60sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -46,6 +47,7 @@
             android:minWidth="250dp"
             android:minHeight="58dp"
             android:text="Sound"
+            android:fontFamily="@font/plusjakartasans_semibold"
             android:textColor="@color/white"
             android:textSize="30sp"
             app:track="@drawable/switch_track" />
@@ -58,6 +60,7 @@
             android:minWidth="250dp"
             android:minHeight="58dp"
             android:text="Vibration"
+            android:fontFamily="@font/plusjakartasans_semibold"
             android:textColor="@color/white"
             android:textSize="30sp"
             app:track="@drawable/switch_track" />
