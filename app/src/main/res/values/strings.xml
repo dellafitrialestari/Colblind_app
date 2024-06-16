@@ -1,8 +1,6 @@
 <resources>
-    <string name="app_name">eye_app</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">ColBlind</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="home_heading1">Kesehatan Mata</string>
     <string name="home_heading2">Tes buta warna dengan ishihara!</string>
     <string name="reminder">Reminder</string>
