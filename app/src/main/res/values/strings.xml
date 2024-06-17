@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ColBlind</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home_heading1">Kesehatan Mata</string>
     <string name="home_heading2">Tes buta warna dengan ishihara!</string>
     <string name="reminder">Reminder</string>
@@ -27,42 +26,17 @@
     <string name="latihan_heading1">Latihan Mata</string>
     <string name="latihan_heading2">Tes buta warna dengan ishihara!</string>
     <string name="latihan1">Palming</string>
-    <string name="latihan2">Mulai berkedip dan berdetak</string>
-    <string name="latihan3">Gerakan mata</string>
-    <string name="latihan4">Zig-zag</string>
-    <string name="latihan5">Flower effect</string>
-    <string name="latihan6">Fokus dekat &amp; jauh</string>
 
     <string name="latihan1_title">Palming Exercise</string>
     <string name="instruksi_title">Instruksi</string>
-    <string name="instruksi1">Tutupi mata dengan telapak tangan</string>
-    <string name="instruksi2">Jangan memberi tekanan pada mata</string>
     <string name="instruksi3">Ulangi latihan ini tiga kali sehari saat bekerja dengan perangkat digital.</string>
     <string name="manfaat_title">Manfaat</string>
-    <string name="manfaat1"> Merilekskan mata</string>
-    <string name="manfaat2">Menenangkan pikiran</string>
-    <string name="manfaat3">Menigkatkan penglihatan</string>
 
     <string name="Score">Score</string>
     <string name="HighScore">High Score</string>
     <string name="HighScore_val">HS_val</string>
-    <string name="NewHighScore">New High Score!!</string>
-    <string name="GameOver">Game Over!</string>
-    <string name="TryAgain">Try Again</string>
-    <string name="MainMenu">Main Menu</string>
-    <string name="time">time</string>
-    <string name="difficulty_easy">Difficulty Easy</string>
-    <string name="difficulty_hard">Difficulty Hard</string>
-    <string name="hard">Hard</string>
-    <string name="easy">Easy</string>
-    <string name="play">Play</string>
-    <string name="setting">settings</string>
-    <string name="sound">Sound</string>
-    <string name="vibration">Vibration</string>
-    <string name="moving">Moving</string>
     <string name="EasyHighScore">High Score Easy</string>
     <string name="HardHighScore">High Score Hard</string>
-    <string name="resume">Resume</string>
     <string name="cd_back_button">Back Button</string>
     <string name="cd_gambar_latihan">Gambar Latihan</string>
     <string name="colblind">ColBlind</string>
