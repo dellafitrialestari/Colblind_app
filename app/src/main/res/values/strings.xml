@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ColBlind</string>
     <string name="home_heading1">Kesehatan Mata</string>
-    <string name="home_heading2">Tes buta warna dengan ishihara!</string>
+    <string name="home_heading2">Tes buta warna dengan ColBlind!</string>
     <string name="reminder">Reminder</string>
     <string name="home_reminder">Simulasi tes buta warna, jika ada masalah pada penglihatan warna harap konsultasikan ke tenaga medis</string>
     <string name="home_fitur">Fitur Kami</string>
