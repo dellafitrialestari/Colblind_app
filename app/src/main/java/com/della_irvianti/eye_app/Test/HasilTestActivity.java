@@ -19,7 +19,7 @@ import java.util.Random;
 
 public class HasilTestActivity extends Activity {
     private int soal;
-    LinearLayout selanjutnya,kembali,sebelumnya,cobalagi;
+    LinearLayout selanjutnya,sebelumnya,cobalagi,exit;
     TextView isi,isi2,isi3,vbenar,hasil;
     ImageView iv_flag;
     List<ItemTest> list,list2,list3;
@@ -43,7 +43,7 @@ public class HasilTestActivity extends Activity {
         selanjutnya= (LinearLayout) findViewById(R.id.selanjutnya);
         sebelumnya= (LinearLayout) findViewById(R.id.sebelumnya);
         cobalagi = (LinearLayout) findViewById(R.id.cobalagi);
-//        kembali = (LinearLayout) findViewById(R.id.kembali);
+        exit = (LinearLayout) findViewById(R.id.exit);
 
         list = new ArrayList<>();
         list2 = new ArrayList<>();
@@ -83,22 +83,12 @@ public class HasilTestActivity extends Activity {
             }
         });
 
-//        kembali.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                AlertDialog.Builder builder = new AlertDialog.Builder(HasilTestActivity.this);
-//                builder.setMessage("Anda yakin ingin kembali ke Menu ?")
-//                        .setPositiveButton("Tidak",null)
-//                        .setNegativeButton("Ya", new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                finish();
-//                            }
-//                        });
-//                AlertDialog alert = builder.create();
-//                alert.show();
-//            }
-//        });
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         sebelumnya.setOnClickListener(new View.OnClickListener() {
             @Override

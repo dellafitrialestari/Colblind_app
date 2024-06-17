@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -48,7 +49,6 @@ public class TestActivity extends Activity {
         b_answer3 = (AppCompatButton) findViewById(R.id.b_answer3);
         b_answer4 = (AppCompatButton) findViewById(R.id.b_answer4);
         exit = (LinearLayout) findViewById(R.id.exit);
-//        info = (ImageButton) findViewById(R.id.info);
 
         list = new ArrayList<>();
         //Isi semua Gambar dan Hasil jawaban
@@ -87,14 +87,14 @@ public class TestActivity extends Activity {
         });
 
         b_answer3.setOnClickListener(new View.OnClickListener() {
-                                         @Override
-                                         public void onClick(View v) {
-                                             if(b_answer3.getText().toString().equalsIgnoreCase(list.get(turn-1).getName())){
-                                                 jawabanbenar();
-                                             }else{
-                                                 jawabansalah();
-                                             }}
-                                     }
+            @Override
+            public void onClick(View v) {
+                if(b_answer3.getText().toString().equalsIgnoreCase(list.get(turn-1).getName())){
+                    jawabanbenar();
+                }else{
+                    jawabansalah();
+                }}
+        }
         );
 
         b_answer4.setOnClickListener(new View.OnClickListener() {
@@ -124,47 +124,53 @@ public class TestActivity extends Activity {
                 alert.show();
             }
         });
-
-//        info.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                AlertDialog.Builder builder = new AlertDialog.Builder(TestActivity.this);
-//                builder.setMessage("Pilihlah angka sesuai dengan yang anda lihat.")
-//                        .setPositiveButton("Ok",null);
-//
-//                AlertDialog alert = builder.create();
-//                alert.show();
-//            }
-//        });
     }
     public void balikmenu(){
         finish();
     }
 
-    public void jawabanbenar(){
-        Toast.makeText(TestActivity.this, "Benar !", Toast.LENGTH_SHORT).show();
+    public void jawabanbenar() {
+        final Toast toast = Toast.makeText(TestActivity.this, "Benar !", Toast.LENGTH_SHORT);
+        toast.show();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 1000);
+
         benar++;
-        vbenar.setText("Benar : "+benar+"/"+soal);
-        //cek jawaban terakhir
-        if(turn<list.size()){
+        vbenar.setText("Benar : " + benar + "/" + soal);
+
+        if (turn < list.size()) {
             turn++;
             newQuestion(turn);
-        }else{
+        } else {
             openpenjelasan();
         }
     }
 
     public void jawabansalah(){
-        Toast.makeText(TestActivity.this, "Salah !", Toast.LENGTH_SHORT).show();
+        final Toast toast = Toast.makeText(TestActivity.this, "Salah !", Toast.LENGTH_SHORT);
 
-        //cek jawaban terakhir
-        if(turn<list.size()){
+        // Menggunakan Handler untuk mempersingkat durasi Toast
+        toast.show();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 1000); // 1000 milidetik = 1 detik
+
+        if(turn < list.size()){
             turn++;
             newQuestion(turn);
-        }else{
+        } else {
             openpenjelasan();
         }
     }
+
 
     public void openpenjelasan(){
         finish();

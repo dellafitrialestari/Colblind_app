@@ -39,7 +39,7 @@
         android:minWidth="200dp"
         android:minHeight="65dp"
         android:soundEffectsEnabled="false"
-        android:text="Main Menu"
+        android:text="Game Menu"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:cornerRadius="10dp" />

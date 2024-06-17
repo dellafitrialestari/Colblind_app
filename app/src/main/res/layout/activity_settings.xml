@@ -21,7 +21,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="30dp"
             android:soundEffectsEnabled="false"
-            app:srcCompat="@drawable/previous_cube" />
+            app:srcCompat="@drawable/ic_back_bold" />
 
         <TextView
             android:id="@+id/settings"
