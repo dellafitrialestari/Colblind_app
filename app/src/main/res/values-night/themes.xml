@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Eye_app" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your night theme here. -->
-
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
     </style>
 
     <style name="Theme.Eye_app" parent="Base.Theme.Eye_app" />
