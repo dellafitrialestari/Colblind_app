@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/homeActivity"
         android:title="Home"
         android:icon="@drawable/ic_home"/>
 
     <item
-        android:id="@+id/latihanFragment"
+        android:id="@+id/latihanActivity"
         android:title="Latihan mata"
         android:icon="@drawable/ic_latihan" />
 
     <item
-        android:id="@+id/gameFragment"
+        android:id="@+id/gameActivity"
         android:title="Game"
         android:icon="@drawable/ic_game"/>
 

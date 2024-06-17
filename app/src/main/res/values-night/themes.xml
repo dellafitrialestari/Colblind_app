@@ -1,19 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Eye_app" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Customize your night theme here. -->
+
     </style>
 
     <style name="Theme.Eye_app" parent="Base.Theme.Eye_app" />
-
-    <!--    <style name="Text">-->
-    <!--        <item name="fontFamily">@font/montserrat_regular</item>-->
-    <!--        <item name="android:textColor">@color/white</item>-->
-    <!--    </style>-->
-    <!--    <style name="Text.Body">-->
-    <!--        <item name="android:textSize">16sp</item>-->
-    <!--    </style>-->
 
     <style name="CustomTabTextAppearance" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:textAllCaps">false</item>
@@ -26,8 +18,8 @@
     </style>
 
     <style name="ThemeOverlay.App.Switch" parent="">
-        <item name="colorOnSurface">@color/some_blue</item>
-        <item name="colorSecondary">@color/some_blue</item>
+        <item name="colorOnSurface">@color/blue_text</item>
+        <item name="colorSecondary">@color/blue_text</item>
     </style>
 
     <style name="RoundedImageViewStyle">

@@ -7,15 +7,9 @@
     <color name="light_blue">#2970FF</color>
     <color name="transparent">#00FFFFFF</color>
 
-
     <color name="grey_text">#AEAEAE</color>
     <color name="black_text">#292D32</color>
     <color name="blue_text">#8DA8F2</color>
 
-<!--#######################-->
-
-    <color name="main_text">#FFFFFF</color>
-
-    <color name="some_blue">#4FADB8</color>
     <color name="trans">#00FFFFFF</color>
 </resources>

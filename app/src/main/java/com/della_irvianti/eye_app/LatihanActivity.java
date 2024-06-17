@@ -30,21 +30,19 @@ public class LatihanActivity extends AppCompatActivity {
         firebaseFirestore = FirebaseFirestore.getInstance();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setSelectedItemId(R.id.latihanFragment);
+        bottomNavigationView.setSelectedItemId(R.id.latihanActivity);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
-            if (id == R.id.homeFragment) {
+            if (id == R.id.homeActivity) {
                 startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-//                    overridePendingTransition(0, 0);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                overridePendingTransition(0, 0);
                 return true;
-            } else if (id == R.id.latihanFragment) {
+            } else if (id == R.id.latihanActivity) {
                 return true;
-            } else if (id == R.id.gameFragment) {
+            } else if (id == R.id.gameActivity) {
                 startActivity(new Intent(getApplicationContext(), MenuGameActivity.class));
-//                    overridePendingTransition(0, 0);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                    overridePendingTransition(0, 0);
                 return true;
             }
             return false;

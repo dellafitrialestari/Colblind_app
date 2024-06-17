@@ -19,23 +19,21 @@ public class HomeActivity extends AppCompatActivity {
 
         // Mengatur BottomNavigationView
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setSelectedItemId(R.id.homeFragment);
+        bottomNavigationView.setSelectedItemId(R.id.homeActivity);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
-                if (id == R.id.homeFragment) {
+                if (id == R.id.homeActivity) {
                     return true;
-                } else if (id == R.id.latihanFragment) {
+                } else if (id == R.id.latihanActivity) {
                     startActivity(new Intent(getApplicationContext(), LatihanActivity.class));
-//                    overridePendingTransition(0, 0);
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                    overridePendingTransition(0, 0);
                     return true;
-                } else if (id == R.id.gameFragment) {
+                } else if (id == R.id.gameActivity) {
                     startActivity(new Intent(getApplicationContext(), MenuGameActivity.class));
-//                    overridePendingTransition(0, 0);
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                    overridePendingTransition(0, 0);
                     return true;
                 }
                 return false;

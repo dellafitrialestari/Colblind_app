@@ -124,21 +124,19 @@ public class MenuGameActivity extends AppCompatActivity {
 
         // Mengatur BottomNavigationView untuk navigasi
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setSelectedItemId(R.id.gameFragment);
+        bottomNavigationView.setSelectedItemId(R.id.gameActivity);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
-            if (id == R.id.homeFragment) {
+            if (id == R.id.homeActivity) {
                 startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-//                overridePendingTransition(0, 0);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                overridePendingTransition(0, 0);
                 return true;
-            } else if (id == R.id.latihanFragment) {
+            } else if (id == R.id.latihanActivity) {
                 startActivity(new Intent(getApplicationContext(), LatihanActivity.class));
-//                overridePendingTransition(0, 0);
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                overridePendingTransition(0, 0);
                 return true;
-            } else if (id == R.id.gameFragment) {
+            } else if (id == R.id.gameActivity) {
                 return true;
             }
             return false;

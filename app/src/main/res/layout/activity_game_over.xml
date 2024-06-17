@@ -87,7 +87,7 @@
             android:minWidth="200dp"
             android:minHeight="65dp"
             android:soundEffectsEnabled="false"
-            android:text="Main Menu"
+            android:text="Game Menu"
             android:fontFamily="@font/plusjakartasans_extrabold"
             android:textAllCaps="false"
             android:textColor="@color/light_blue"
