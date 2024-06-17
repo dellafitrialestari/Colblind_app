@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:text="Instruksi"
+                    android:text="@string/home_fitur2"
                     android:fontFamily="@font/plusjakartasans_semibold"
                     />
             </LinearLayout>
@@ -61,19 +61,29 @@
                     android:layout_marginBottom="15dp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Instruksi"
+                    android:text="Tes Buta Warna"
                     android:fontFamily="@font/plusjakartasans_semibold"
                     />
+
+                <ImageView
+                    android:id="@+id/contoh"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="11dp"
+                    android:src="@drawable/test_example" />
+
                 <TextView
                     android:id="@+id/text1"
                     android:textColor="#292D32"
                     android:textSize="12sp"
-                    android:layout_marginBottom="17dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Tutupi mata dengan telapak tangan"
-                    android:fontFamily="@font/plusjakartasans_regular"
-                    />
+                    android:textAlignment="viewStart"
+                    android:justificationMode="inter_word"
+                    android:text="@string/penjelasan"
+                    android:fontFamily="@font/plusjakartasans_regular" />
                 <TextView
                     android:id="@+id/text2"
                     android:textColor="#292D32"
@@ -81,18 +91,11 @@
                     android:layout_marginBottom="18dp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Jangan memberi tekanan pada mata"
+                    android:textAlignment="viewStart"
+                    android:justificationMode="inter_word"
+                    android:text="@string/ishihara"
                     android:fontFamily="@font/plusjakartasans_regular"
                     />
-                <TextView
-                    android:id="@+id/text3"
-                    android:textColor="#292D32"
-                    android:textSize="12sp"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:text="Ulangi latihan ini tiga kali sehari saat bekerja dengan perangkat digital."
-                    android:fontFamily="@font/plusjakartasans_regular"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

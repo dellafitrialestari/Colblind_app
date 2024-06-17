@@ -24,9 +24,11 @@
     <string name="test_ket3">Keterangan 3</string>
 
     <string name="latihan_heading1">Latihan Mata</string>
-    <string name="latihan_heading2">Tes buta warna dengan ishihara!</string>
+    <string name="desc_title1">Tes buta warna dengan ishihara!</string>
+    <string name="desc_title2">Rawat mata Anda!</string>
     <string name="latihan1">Palming</string>
-
+    <string name="penjelasan">Perhatikan angka yang tertera di atas, yakni angka 3. Tugas Anda adalah mengisi jawaban berdasarkan gambar yang ditampilkan. Terdapat 10 soal yang masing-masing berisi gambar. Dalam tes ini, Anda akan diminta untuk menyusun objek berwarna sesuai dengan gradasi warna yang berbeda-beda. Tantangannya adalah menyusun angka berwarna tersebut agar sesuai dengan gradasi warna yang Anda lihat.</string>
+    <string name="ishihara">Tes ini adalah bagian dari tes buta warna Ishihara, sebuah metode yang dirancang untuk mendeteksi gangguan penglihatan warna, khususnya buta warna merah-hijau. Selamat mencoba!</string>
     <string name="latihan1_title">Palming Exercise</string>
     <string name="instruksi_title">Instruksi</string>
     <string name="instruksi3">Ulangi latihan ini tiga kali sehari saat bekerja dengan perangkat digital.</string>

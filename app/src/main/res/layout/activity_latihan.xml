@@ -59,7 +59,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/latihan_heading2"
+                        android:text="@string/desc_title2"
                         android:fontFamily="@font/plusjakartasans_regular"
                         android:textColor="@color/grey_text"
                         android:textSize="12sp" />
