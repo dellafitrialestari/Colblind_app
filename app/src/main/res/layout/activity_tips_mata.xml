@@ -25,7 +25,7 @@
             android:orientation="vertical" />
 
         <TextView
-            android:id="@+id/r1c6dr7c4xo8j"
+            android:id="@+id/title_tips"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:layout_height="wrap_content"
