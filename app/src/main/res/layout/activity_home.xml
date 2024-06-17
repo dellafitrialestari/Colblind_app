@@ -288,6 +288,7 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemActiveIndicatorStyle="@style/CustomNav"
         android:layout_gravity="bottom"
         android:background="@android:color/white"
         app:labelVisibilityMode="labeled"
@@ -295,6 +296,6 @@
         app:itemTextColor="@color/bottom_nav_color"
         app:itemIconTint="@color/bottom_nav_color"
         app:itemTextAppearanceActive="@style/BottomNavigationViewActiveTextAppearance"
-        app:itemTextAppearanceInactive="@style/BottomNavigationViewInactiveTextAppearance"
-        app:itemActiveIndicatorStyle="@color/transparent"/>
+        app:itemTextAppearanceInactive="@style/BottomNavigationViewInactiveTextAppearance" />
+
 </LinearLayout>

@@ -157,5 +157,5 @@
         app:itemIconTint="@color/bottom_nav_color"
         app:itemTextAppearanceActive="@style/BottomNavigationViewActiveTextAppearance"
         app:itemTextAppearanceInactive="@style/BottomNavigationViewInactiveTextAppearance"
-        app:itemActiveIndicatorStyle="@color/transparent"/>
+        app:itemActiveIndicatorStyle="@style/CustomNav" />
 </LinearLayout>
