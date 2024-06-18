@@ -79,7 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:textAlignment="center"
-                android:text="Anda buta warna atau tidak"
+                android:text="@string/hasiltest_yesno"
                 android:fontFamily="@font/plusjakartasans_semibold"
                 />
             <LinearLayout

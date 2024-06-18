@@ -61,7 +61,7 @@
                     android:layout_marginBottom="15dp"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Tes Buta Warna"
+                    android:text="@string/instruksi_test"
                     android:fontFamily="@font/plusjakartasans_semibold"
                     />
 

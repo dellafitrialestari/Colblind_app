@@ -60,4 +60,14 @@
     <string name="button14">Button 14</string>
     <string name="button15">Button 15</string>
     <string name="button16">Button 16</string>
+
+    <string name="gameover_menu">Game Menu</string>
+    <string name="gameover_tryagain">Try Again</string>
+    <string name="gameover_score">Score</string>
+    <string name="gameover_highscore">New High Score</string>
+    <string name="gameover_gameover">Game Over</string>
+
+    <string name="hasiltest_yesno">Anda buta warna atau tidak</string>
+
+    <string name="instruksi_test">Tes Buta Warna</string>
 </resources>
