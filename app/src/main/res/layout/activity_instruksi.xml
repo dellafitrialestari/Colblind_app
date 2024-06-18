@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FFFFFFFF"
+    android:background="@color/white"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#FFFFFFFF"
+        android:background="@color/white"
         android:paddingBottom="24dp"
         android:scrollbars="none"
         android:fillViewport="true">
@@ -38,7 +38,7 @@
                 </ImageView>
                 <TextView
                     android:id="@+id/title"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -50,13 +50,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFFFF"
+                android:background="@color/white"
                 android:paddingVertical="29dp"
                 android:paddingHorizontal="26dp"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/title_2"
-                    android:textColor="#8DA8F2"
+                    android:textColor="@color/blue_text"
                     android:textSize="16sp"
                     android:layout_marginBottom="15dp"
                     android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
 
                 <TextView
                     android:id="@+id/text1"
-                    android:textColor="#292D32"
+                    android:textColor="@color/black_text"
                     android:textSize="12sp"
                     android:layout_marginBottom="10dp"
                     android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
                     android:fontFamily="@font/plusjakartasans_regular" />
                 <TextView
                     android:id="@+id/text2"
-                    android:textColor="#292D32"
+                    android:textColor="@color/black_text"
                     android:textSize="12sp"
                     android:layout_marginBottom="18dp"
                     android:layout_height="wrap_content"

@@ -83,7 +83,6 @@
                 android:fontFamily="@font/plusjakartasans_semibold"
                 />
             <LinearLayout
-                android:id="@+id/rs6nqwjnp4p"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"

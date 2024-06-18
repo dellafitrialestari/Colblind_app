@@ -119,7 +119,6 @@
             </com.google.android.material.tabs.TabLayout>
 
             <RelativeLayout
-                android:id="@+id/renk1vqj16x"
                 android:layout_width="314dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="98dp"
@@ -134,7 +133,6 @@
                     android:gravity="end"
                     android:orientation="vertical">
                     <ImageView
-                        android:id="@+id/rv063s6nh4ep"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/ic_bottom"

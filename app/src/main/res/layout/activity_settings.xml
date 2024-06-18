@@ -31,7 +31,7 @@
             android:gravity="center"
             android:text="Setting"
             android:fontFamily="@font/plusjakartasans_extrabold"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="60sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +77,6 @@
             android:textSize="30sp"
             android:visibility="gone"
             app:track="@drawable/switch_track" />
-
 
     </LinearLayout>
 

@@ -19,7 +19,6 @@
         android:src="@mipmap/ic_launcher"/>
 
     <LinearLayout
-        android:id="@+id/r4k7s6p971kh"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"

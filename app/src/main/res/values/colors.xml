@@ -12,5 +12,7 @@
     <color name="black_text">#292D32</color>
     <color name="blue_text">#8DA8F2</color>
 
+    <color name="light_light_blue">#BECFFF</color>
+
     <color name="trans">#00FFFFFF</color>
 </resources>

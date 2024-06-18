@@ -94,7 +94,6 @@
             android:textSize="25sp"
             app:cornerRadius="10dp" />
 
-
     </LinearLayout>
 
 </LinearLayout>
