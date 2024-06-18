@@ -14,14 +14,14 @@
         android:layout_above="@id/bottomNavigationView"
         android:background="@color/white"
         android:fillViewport="true"
-        android:paddingHorizontal="22dp"
-        android:paddingTop="46dp"
-        android:paddingBottom="24dp">
+        android:scrollbars="none"
+        android:paddingHorizontal="22dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingTop="46dp">
 
             <LinearLayout
                 android:id="@+id/latihan_heading"
@@ -81,7 +81,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:paddingBottom="24dp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

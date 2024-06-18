@@ -14,7 +14,9 @@
         android:background="@drawable/bg_top"
         android:paddingVertical="53dp"
         android:paddingHorizontal="24dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp">
 
         <ImageView
             android:id="@+id/back_button"

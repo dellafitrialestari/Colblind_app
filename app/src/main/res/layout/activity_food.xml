@@ -14,7 +14,9 @@
         android:background="@drawable/bg_top"
         android:paddingVertical="53dp"
         android:paddingHorizontal="24dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp">
 
         <ImageView
             android:id="@+id/back_button"
@@ -25,14 +27,14 @@
             android:orientation="vertical" />
 
         <TextView
-            android:id="@+id/r1c6dr7c4xo8j"
+            android:id="@+id/title"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:layout_height="wrap_content"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:fontFamily="@font/plusjakartasans_semibold"
-            android:text="Makanan Sehat" />
+            android:text="@string/home_makanan" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
