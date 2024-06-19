@@ -400,7 +400,7 @@ public class GameActivity extends AppCompatActivity {
 
         Resources res = getResources();
         final String[] btnList = res.getStringArray(R.array.all_button);
-        int random = new Random().nextInt(16);
+        int random = new Random().nextInt(16); // satu tombol secara acak dengan warna berbeda
 
         int randomrgb = (new Random().nextInt(128))+20;
         int random_forCol = new Random().nextInt(6);
@@ -452,7 +452,7 @@ public class GameActivity extends AppCompatActivity {
         if(rr==r&&gg==g&&bb==b){rr=128;gg=128;bb=128;}
         if(rr<0||rr>255||gg<0||gg>255|bb<0|bb>255){rr=128;gg=128;bb=128;}
         diff_col = btnList[random];
-        String diffhex = String.format("#%02x%02x%02x", ((int)rr), ((int)gg), ((int)bb));
+        String diffhex = String.format("#%02x%02x%02x", ((int)rr), ((int)gg), ((int)bb)); // satu warna beda
 
        // Log.d(TAG, "r="+r+" g="+g+" b"+b);
        // Log.d(TAG, "rr="+rr+" gg="+gg+" bb"+bb);
