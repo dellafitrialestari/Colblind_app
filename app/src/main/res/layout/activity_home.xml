@@ -152,10 +152,10 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="50dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/ic_home_test"
+                        android:layout_marginBottom="26dp"
+                        android:background="@drawable/ic_fitur1"
                         android:orientation="vertical">
                     </LinearLayout>
 
@@ -184,11 +184,11 @@
                     android:paddingVertical="23dp">
 
                     <LinearLayout
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/ic_home_instruction"
+                        android:layout_marginBottom="26dp"
+                        android:background="@drawable/ic_fitur2"
                         android:orientation="vertical">
                     </LinearLayout>
 
@@ -232,11 +232,11 @@
                     android:paddingVertical="16dp">
 
                     <LinearLayout
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/ic_home_tips"
+                        android:background="@drawable/ic_tips"
                         android:orientation="vertical">
                     </LinearLayout>
 
@@ -267,10 +267,10 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="48dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/ic_home_nutrition"
+                        android:background="@drawable/ic_food"
                         android:orientation="vertical">
                     </LinearLayout>
 
