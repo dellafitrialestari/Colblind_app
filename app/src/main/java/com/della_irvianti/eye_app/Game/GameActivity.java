@@ -200,12 +200,12 @@ public class GameActivity extends AppCompatActivity {
     //Function to display the custom dialog.
     void showCustomDialog() {
         final Dialog dialog = new Dialog(GameActivity.this);
-        //We have added a title in the custom layout. So let's disable the default title.
+        //custom layout, so disable default title.
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.getWindow().setBackgroundDrawableResource(R.color.trans);
-        //The user will be able to cancel the dialog bu clicking anywhere outside the dialog.
+        //user will be able to cancel the dialog by clicking anywhere outside the dialog.
       dialog.setCancelable(false);
-        //Mention the name of the layout of your custom dialog.
+        //name of custom dialog.
         dialog.setContentView(R.layout.custom_dialog);
         countDownTimer.cancel();
         dialog_is_show = 1;
